@@ -1,0 +1,58 @@
+﻿/* Centering elements */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Form styling */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.control-label {
+    font-weight: bold;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+/* Table styling */
+.table {
+    margin-top: 1.5rem;
+}
+
+    .table th,
+    .table td {
+        text-align: center;
+        vertical-align: middle;
+    }
+
+.thead-dark th {
+    background-color: #343a40;
+    color: #fff;
+}
+
+/* Image styling */
+img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Alert box styling */
+.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}

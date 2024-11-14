@@ -1,0 +1,70 @@
+﻿@model IEnumerable<CLDV6212.Models.ProcessOrders>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <h2 class="text-center">@ViewData["Title"]</h2>
+            <p class="text-center mt-3">
+                <a asp-action="Register" class="btn btn-success">Create New Process Order</a>
+            </p>
+
+            <table class="table table-bordered mt-4">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Customer</th>
+                        <th>Product</th>
+                        <th>Process Date</th>
+                        <th>Location</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <!-- Displaying Customer (User) Name -->
+                            <td>@Html.DisplayFor(modelItem => item.User.Name)</td>
+
+                            <!-- Displaying Product Name -->
+                            <td>@Html.DisplayFor(modelItem => item.Product.Product_Name)</td>
+
+                            <!-- Displaying Process Date -->
+                            <td>@Html.DisplayFor(modelItem => item.Process_Date)</td>
+
+                            <!-- Displaying Process Location -->
+                            <td>@Html.DisplayFor(modelItem => item.Process_Location)</td>
+
+                            <td>
+                                <form asp-action="UpdateStatus" method="post" class="d-inline">
+                                    <input type="hidden" name="Processing_Id" value="@item.Processing_Id" />
+                                    @Html.DropDownListFor(
+                                             modelItem => item.Status,
+                                             new SelectList(new List<SelectListItem>
+                                {
+                                new SelectListItem { Text = "Pending", Value = "Pending" },
+                                new SelectListItem { Text = "On the Shop", Value = "On the Shop" },
+                                new SelectListItem { Text = "Coming", Value = "Coming" },
+                                new SelectListItem { Text = "Delivered", Value = "Delivered" }
+                                }, "Value", "Text", item.Status),
+                                             new { @class = "form-control" })
+                                    <button type="submit" class="btn btn-primary btn-sm mt-2">Update</button>
+                                </form>
+                            </td>
+
+                            <td>
+                                <form asp-action="DeleteProcessProfile" method="post" class="d-inline">
+                                    <input type="hidden" name="Processing_Id" value="@item.Processing_Id" />
+                                    <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+@* ///Concepts, P. R. O. (no date) Part 49. Dropdown using SelectListItem in .NET core MVC. | group | multi select | disable item |. Youtube. Available at: https://www.youtube.com/watch?v=QHh39YnufJY (Accessed:28 August 2024) *@

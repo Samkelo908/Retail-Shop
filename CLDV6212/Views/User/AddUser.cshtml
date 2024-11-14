@@ -1,0 +1,121 @@
+﻿@model CLDV6212.Models.User
+
+@{
+    ViewData["Title"] = "Add User";
+}
+
+
+<style>
+    body {
+        background-color: #f4f6f8;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #333;
+        padding-top: 40px;
+    }
+
+    h2 {
+        color: #2d3436;
+        font-weight: 600;
+        font-size: 26px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .form-group label {
+        font-weight: 500;
+        color: #4b4b4b;
+    }
+
+    .form-control {
+        height: 45px;
+        border-radius: 6px;
+        border: 1px solid #ced4da;
+        font-size: 15px;
+        transition: all 0.3s ease;
+    }
+
+        .form-control:focus {
+            border-color: #00b894;
+            box-shadow: 0 0 8px rgba(0, 184, 148, 0.2);
+        }
+
+    .btn-primary {
+        background-color: #00b894;
+        border: none;
+        font-size: 16px;
+        padding: 12px 24px;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+        width: 100%;
+        max-width: 200px;
+    }
+
+        .btn-primary:hover {
+            background-color: #019875;
+        }
+
+    .text-danger {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .text-center {
+        margin-top: 20px;
+    }
+
+    .form-container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+</style>
+
+<div class="form-container">
+    <h2>@ViewData["Title"]</h2>
+    <form asp-action="AddUser" enctype="multipart/form-data" method="post">
+        <div class="form-group">
+            <label asp-for="Name">First Name</label>
+            <input asp-for="Name" class="form-control" placeholder="Enter first name" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Surname">Last Name</label>
+            <input asp-for="Surname" class="form-control" placeholder="Enter last name" />
+            <span asp-validation-for="Surname" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Email">Email</label>
+            <input asp-for="Email" type="email" class="form-control" placeholder="Enter email address" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Phone">Phone Number</label>
+            <input asp-for="Phone" type="tel" class="form-control" placeholder="Enter phone number" />
+            <span asp-validation-for="Phone" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Address">Address</label>
+            <input asp-for="Address" class="form-control" placeholder="Enter address" />
+            <span asp-validation-for="Address" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ImageUrl">Profile Image</label>
+            <input type="file" name="userImage" class="form-control" />
+            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Password">Password</label>
+            <input asp-for="Password" type="password" class="form-control" placeholder="Enter password" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+
+        <div class="form-group text-center">
+            <input type="submit" value="Add User" class="btn btn-primary" />
+        </div>
+    </form>
+</div>

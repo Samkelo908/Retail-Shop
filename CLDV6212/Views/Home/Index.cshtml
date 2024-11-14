@@ -1,0 +1,122 @@
+﻿@model CLDV6212.Models.Media
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<style>
+    .jumbotron {
+        background-image: url('https://iwellnesslife.com/wp-content/uploads/2017/02/grocery.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 3rem 2rem;
+        border-radius: 0.75rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+        .jumbotron h1 {
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .jumbotron .lead {
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+        }
+
+    .btn-primary, .btn-secondary {
+        padding: 0.75rem 1.5rem;
+        font-size: 1.2rem;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+            transform: translateY(-3px);
+        }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+            transform: translateY(-3px);
+        }
+
+    .card {
+        border: none;
+        border-radius: 0.75rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-title {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .list-group-item {
+        background-color: #f8f9fa;
+        font-size: 1.1rem;
+    }
+
+        .list-group-item:hover {
+            background-color: #e9ecef;
+        }
+</style>
+
+<div class="container mt-5">
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Welcome to ABC Retail!</h1>
+        <p class="lead">Your one-stop shop for all your food and essentials.</p>
+        <hr class="my-4">
+        <p>Discover our wide range of products, from fresh groceries to household items, all available through our efficient online order system.</p>
+        <a class="btn btn-primary btn-lg" href="/Product/Index" role="button">Shop Now</a>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <div class="card shadow-lg mb-4 border-0">
+                <div class="card-body p-4">
+                    <h2 class="card-title text-primary font-weight-bold">About Us</h2>
+                    <p class="card-text mt-3">At ABC Retail, we are committed to providing you with the best online shopping experience. Our state-of-the-art order processing system ensures that you receive your products quickly and efficiently, whether you're ordering fresh food, beverages, or household essentials.</p>
+                    <p class="card-text">Our platform is designed to handle high volumes of orders, especially during peak shopping seasons, so you can always rely on us for your needs.</p>
+                    <p class="card-text"> We will always delivery on time with your orders and you love to join us. if you want to learn more you can push more about us button. We also delivery frensh food you would love 😍</p>
+
+                    <a class="btn btn-primary mt-3 px-4 py-2" href="/Home/Privacy" role="button">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card shadow-lg mb-4 border-0">
+                <div class="card-body p-4">
+                    <h2 class="card-title text-primary font-weight-bold">What We Sell</h2>
+                    <p class="card-text mt-3">We offer a wide variety of products including:</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="fas fa-apple-alt text-success mr-3"></i> Fresh Groceries
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="fas fa-coffee text-warning mr-3"></i> Beverages
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="fas fa-home text-info mr-3"></i> Household Essentials
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="fas fa-spa text-secondary mr-3"></i> Personal Care Products
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="fas fa-ellipsis-h text-muted mr-3"></i> And much more!
+                        </li>
+                    </ul>
+                    <a class="btn btn-primary mt-3 px-4 py-2" href="/Product/Index" role="button">Explore Our Products</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </div>
+</div>
+@* // W3schools.com.ASP tutorial.Available at: https://www.w3schools.com/asp/default.ASP (Accessed: August 30, 2024).
+ *@

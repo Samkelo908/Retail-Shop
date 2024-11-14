@@ -1,0 +1,87 @@
+﻿@model CLDV6212.Models.Media
+@{
+    ViewData["Title"] = "About Us";
+}
+
+<div class="container mt-5">
+    <div class="blob-container">
+        <!-- Video Section -->
+        <div class="blob-video">
+            <video autoplay loop muted>
+                <source src="@Model.MediaUrl" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Information Section -->
+        <div class="blob-info">
+            <h2>About Us</h2>
+            <p>Welcome to ABC Retail! We are more than just an online store; we're a customer-first platform dedicated to bringing you convenience, quality, and variety. Our mission is to redefine the online shopping experience by making it as seamless and enjoyable as possible.</p>
+            <p>With our cutting-edge order processing system, you can rest assured that your products, whether fresh groceries, beverages, or essential household items, will be delivered quickly and reliably to your doorstep.</p>
+            <p>ABC Retail is built to handle high order volumes, especially during peak shopping seasons. Our scalable infrastructure ensures that we’re always ready to serve you, no matter how busy things get.</p>
+            <p>We are also committed to sustainability, making conscious choices to reduce our environmental impact through efficient packaging and eco-friendly sourcing where possible. At ABC Retail, every purchase is backed by our dedicated customer support team, here to assist you every step of the way.</p>
+            <a class="btn btn-primary mt-3 px-4 py-2" href="/Product/Index">Shop to Us</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .blob-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        margin-top: 20px;
+        background-color: #f8f9fa;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .blob-video {
+        flex: 1;
+        max-width: 50%;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+        .blob-video video {
+            width: 100%;
+            height: 680px; 
+            border-radius: 12px;
+            object-fit: cover; 
+        }
+
+    .blob-info {
+        flex: 1;
+        margin-left: 20px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+        .blob-info h2 {
+            color: #007bff;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .blob-info p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+        transition: background-color 0.3s;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+</style>

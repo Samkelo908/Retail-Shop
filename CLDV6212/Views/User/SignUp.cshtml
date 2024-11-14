@@ -1,0 +1,54 @@
+﻿@model CLDV6212.Models.User
+
+@{
+    ViewData["Title"] = "Sign Up";
+}
+
+<div class="container mt-5" style="max-width: 800px;">
+    <h2 class="text-center mb-4">@ViewData["Title"]</h2>
+
+    <form asp-action="AddUser" enctype="multipart/form-data" method="post" class="shadow p-4 rounded bg-light">
+        <div class="form-group mb-3">
+            <label asp-for="Name" class="control-label fw-bold">Customer Name</label>
+            <input asp-for="Name" class="form-control" placeholder="Enter customer name" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Surname" class="control-label fw-bold">Customer Surname</label>
+            <input asp-for="Surname" class="form-control" placeholder="Enter customer surname" />
+            <span asp-validation-for="Surname" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Email" class="control-label fw-bold">Customer Email</label>
+            <input asp-for="Email" class="form-control" placeholder="Enter customer email" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Phone" class="control-label fw-bold">Customer Phone</label>
+            <input asp-for="Phone" class="form-control" placeholder="Enter customer phone" />
+            <span asp-validation-for="Phone" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Address" class="control-label fw-bold">Address</label>
+            <input asp-for="Address" class="form-control" placeholder="Enter address" />
+            <span asp-validation-for="Address" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="ImageUrl" class="control-label fw-bold">Profile Image</label>
+            <input type="file" asp-for="ImageUrl" class="form-control" />
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Password" class="control-label fw-bold">Password</label>
+            <input asp-for="Password" type="password" class="form-control" placeholder="Enter password" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add New User</button>
+    </form>
+</div>

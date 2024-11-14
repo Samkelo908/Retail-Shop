@@ -1,0 +1,161 @@
+﻿@model List<CLDV6212.Models.FileModel>
+
+@{
+    ViewData["Title"] = "Uploaded Files";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h2 class="text-center page-title">@ViewData["Title"]</h2>
+
+            @if (TempData["Message"] != null)
+            {
+                <div class="alert alert-info text-center alert-box">
+                    @TempData["Message"]
+                </div>
+            }
+
+            <!-- File Upload Form -->
+            <form asp-controller="Files" asp-action="Upload" method="post" enctype="multipart/form-data" class="mt-4 upload-form">
+                <div class="form-group">
+                    <label for="file" class="control-label form-label">Choose a file to upload:</label>
+                    <input type="file" name="file" class="form-control-file" />
+                    <button type="submit" class="btn btn-primary mt-2 submit-btn">Upload</button>
+                </div>
+            </form>
+
+            <!-- Uploaded Files List -->
+            @if (Model != null && Model.Count > 0)
+            {
+                <ul class="list-group mt-4 file-list">
+                    @foreach (var file in Model)
+                    {
+                        <li class="list-group-item d-flex justify-content-between align-items-center file-item">
+                            <span class="file-info">@file.Name - Size: @file.DisplaySize - Last Modified: @file.LastModified?.ToString("g")</span>
+                            <a asp-controller="Files" asp-action="DownloadFile" asp-route-fileName="@file.Name" class="btn btn-link download-btn">Download</a>
+                        </li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <p class="text-center mt-4 no-files">No files found.</p>
+            }
+        </div>
+    </div>
+</div>
+
+<!-- CSS Styling -->
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+    }
+
+    .page-title {
+        font-size: 28px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .alert-box {
+        background-color: #d9f7be;
+        border-color: #8cc63f;
+        color: #4f9f2f;
+        border-radius: 6px;
+        padding: 15px;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .upload-form {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-label {
+        font-size: 16px;
+        font-weight: 500;
+        color: #555;
+    }
+
+    .form-control-file {
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 12px;
+        background-color: #007bff;
+        border: none;
+        border-radius: 6px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        .submit-btn:active {
+            background-color: #004494;
+            transform: translateY(0);
+        }
+
+    .file-list {
+        margin-top: 30px;
+    }
+
+    .file-item {
+        background-color: #f8f9fa;
+        padding: 15px;
+        border-radius: 6px;
+        margin-bottom: 10px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+    }
+
+        .file-item:hover {
+            transform: scale(1.02);
+        }
+
+    .file-info {
+        font-size: 14px;
+        color: #555;
+    }
+
+    .download-btn {
+        font-size: 14px;
+        color: #007bff;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+        .download-btn:hover {
+            text-decoration: underline;
+        }
+
+    .no-files {
+        font-size: 16px;
+        color: #888;
+    }
+</style>

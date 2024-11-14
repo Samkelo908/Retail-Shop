@@ -1,0 +1,125 @@
+﻿@model IEnumerable<CLDV6212.Models.Product>
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <h2 class="text-center display-4 text-primary">@ViewData["Title"]</h2>
+            @* <p class="text-center mt-4">
+                <a asp-action="AddProduct" class="btn btn-success btn-lg px-4">Add New Product</a>
+            </p> *@
+
+            <div class="row mt-5">
+                @foreach (var product in Model)
+                {
+                    <div class="col-md-4 mb-4">
+                        <div class="card product-card">
+                            <img src="@product.ImageUrl" alt="@product.Product_Name" class="card-img-top product-image" />
+                            <div class="card-body">
+                                <h5 class="card-title text-dark font-weight-bold">@product.Product_Name</h5>
+                                <p class="card-text text-muted">@product.Description</p>
+                                <p class="CategoryName"> @product.CategoryName</p>
+                                <p class="price">R @product.Price</p>
+                                <p class="AvailabilityStatus">@product.AvailabilityStatus</p>
+                                <form asp-action="DeleteProduct" method="post" asp-route-productName="@product.Product_Name" class="d-inline">
+                                    <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Overall styling */
+    .container {
+        max-width: 1200px;
+    }
+
+    /* Category styling */
+    .CategoryName {
+        font-weight: 600;
+        color: orangered;
+        font-size: 1rem;
+    }
+
+
+    /* Title styling */
+    h2 {
+        font-size: 2.5rem;
+        color: #007bff;
+        font-weight: 600;
+    }
+
+    /* Card styling */
+    .product-card {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        background-color: #fff;
+    }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+    /* Product image styling */
+    .product-image {
+        height: 220px;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    /* Card content styling */
+    .card-title {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+    }
+
+    .card-text {
+        font-size: 1rem;
+        margin-bottom: 15px;
+        color: #555;
+    }
+
+    .price {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #28a745;
+    }
+
+    .AvailabilityStatus {
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: #007bff;
+    }
+
+    /* Button styling */
+    .btn-success {
+        background-color: #28a745;
+        border-color: #28a745;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-success:hover {
+            background-color: #218838;
+            border-color: #218838;
+        }
+
+    .btn-danger {
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
+        }
+</style>

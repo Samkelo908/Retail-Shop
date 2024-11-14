@@ -1,0 +1,52 @@
+﻿@model IEnumerable<CLDV6212.Models.User>
+
+@{
+    ViewData["Title"] = "Users";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <h2 class="text-center">@ViewData["Title"]</h2>
+            <p class="text-center mt-3">
+                <a asp-action="AddUser" class="btn btn-success">Add New User</a>
+            </p>
+
+            <table class="table table-bordered mt-4">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>User ID</th>
+                        <th>Name</th>
+                        <th>Surname</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                        <th>Address</th>
+                        <th>Profile Image</th>
+                        <th>Delete User</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var user in Model)
+                    {
+                        <tr>
+                            <td>@user.RowKey</td>
+                            <td>@user.Name</td>
+                            <td>@user.Surname</td>
+                            <td>@user.Email</td>
+                            <td>@user.Phone</td>
+                            <td>@user.Address</td>
+                            <td><img src="@user.ImageUrl" alt="User Image" style="width:100px;height:auto;" /></td>
+                            <td>
+                                <form asp-action="Delete" method="post" class="d-inline">
+                                    <input type="hidden" name="PartitionKey" value="@user.PartitionKey" />
+                                    <input type="hidden" name="RowKey" value="@user.RowKey" />
+                                    <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
