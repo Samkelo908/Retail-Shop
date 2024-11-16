@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ACCVkhY5uvE=",
+  "dgSpecHash": "QK5n9vr92C4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\lab_services_student\\Downloads\\vcnmb-cldv6212-2024-part-1-Samkelo908-master\\CLDV6212\\CLDV6212.csproj",
+  "projectFilePath": "C:\\Users\\lab_services_student\\Desktop\\prog\\Cloud\\Prog 2B\\CLVD6222\\Past Cloud\\Cldv\\Retail-Shop\\CLDV6212\\CLDV6212.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lab_services_student\\.nuget\\packages\\azure.core\\1.41.0\\azure.core.1.41.0.nupkg.sha512",
     "C:\\Users\\lab_services_student\\.nuget\\packages\\azure.data.tables\\12.9.0\\azure.data.tables.12.9.0.nupkg.sha512",

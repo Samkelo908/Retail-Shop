@@ -8349,11 +8349,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lab_services_student\\Downloads\\vcnmb-cldv6212-2024-part-1-Samkelo908-master\\CLDV6212\\CLDV6212.csproj",
+      "projectUniqueName": "C:\\Users\\lab_services_student\\Desktop\\prog\\Cloud\\Prog 2B\\CLVD6222\\Past Cloud\\Cldv\\Retail-Shop\\CLDV6212\\CLDV6212.csproj",
       "projectName": "CLDV6212",
-      "projectPath": "C:\\Users\\lab_services_student\\Downloads\\vcnmb-cldv6212-2024-part-1-Samkelo908-master\\CLDV6212\\CLDV6212.csproj",
+      "projectPath": "C:\\Users\\lab_services_student\\Desktop\\prog\\Cloud\\Prog 2B\\CLVD6222\\Past Cloud\\Cldv\\Retail-Shop\\CLDV6212\\CLDV6212.csproj",
       "packagesPath": "C:\\Users\\lab_services_student\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lab_services_student\\Downloads\\vcnmb-cldv6212-2024-part-1-Samkelo908-master\\CLDV6212\\obj\\",
+      "outputPath": "C:\\Users\\lab_services_student\\Desktop\\prog\\Cloud\\Prog 2B\\CLVD6222\\Past Cloud\\Cldv\\Retail-Shop\\CLDV6212\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

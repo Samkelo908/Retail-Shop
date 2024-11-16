@@ -18,8 +18,8 @@ namespace CLDV6212.Controllers
         // Fields for HttpClient, Logger, and connection strings
         private readonly HttpClient _httpClient;
         private readonly ILogger<UserController> _logger;
-        private readonly string _functionUrl = "https://abcretailerfunction.azurewebsites.net/api/AddUser?code=jFfEekHOYyjJc0puOAgl9UsYV_xAXBQbfT4Rgf8TdNEqAzFuI8Braw%3D%3D";
-        string connectionString = "Data Source=abcretailpart3.database.windows.net;Initial Catalog=abcRetailer; User ID=ST10141464; Password=SamRock28";
+        private readonly string _functionUrl = "";
+        string connectionString = "";
 
         // Constructor for injecting dependencies
         public UserController(HttpClient httpClient, ILogger<UserController> logger)
@@ -208,8 +208,8 @@ namespace CLDV6212.Controllers
         // Upload image to Blob storage and return URL
         private async Task<string> UploadImageToBlobAsync(IFormFile file)
         {
-            var connectionString = "DefaultEndpointsProtocol=https;AccountName=abcretailclvd;AccountKey=YMXj4YnPxNcKH7ddYBXMiEZXiybKEMbldwLLHhJMd83EUr44qtzDldYMPU56cn7B1w4pi7TsdZNT+AStHdLkNA==;EndpointSuffix=core.windows.net";
-            var blobContainerName = "images1";
+            var connectionString = "";
+            var blobContainerName = "";
             var blobClient = new BlobContainerClient(connectionString, blobContainerName);
             await blobClient.CreateIfNotExistsAsync();
 

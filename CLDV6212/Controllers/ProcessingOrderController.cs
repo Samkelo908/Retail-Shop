@@ -11,7 +11,7 @@ namespace CLDV6212.Controllers
 {
     public class ProcessingOrderController : Controller
     {
-        private readonly string _connectionString = "Data Source=abcretailpart3.database.windows.net;Initial Catalog=abcRetailer; User ID =ST10141464; Password=SamRock28";
+        private readonly string _connectionString = "";
 
 
         public async Task<IActionResult> Index()

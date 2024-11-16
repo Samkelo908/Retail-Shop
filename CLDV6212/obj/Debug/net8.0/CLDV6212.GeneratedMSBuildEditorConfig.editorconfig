@@ -17,99 +17,99 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CLDV6212
 build_property.RootNamespace = CLDV6212
-build_property.ProjectDir = C:\Users\lab_services_student\Downloads\vcnmb-cldv6212-2024-part-1-Samkelo908-master\CLDV6212\
+build_property.ProjectDir = C:\Users\lab_services_student\Desktop\prog\Cloud\Prog 2B\CLVD6222\Past Cloud\Cldv\Retail-Shop\CLDV6212\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\lab_services_student\Downloads\vcnmb-cldv6212-2024-part-1-Samkelo908-master\CLDV6212
+build_property.MSBuildProjectDirectory = C:\Users\lab_services_student\Desktop\prog\Cloud\Prog 2B\CLVD6222\Past Cloud\Cldv\Retail-Shop\CLDV6212
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/lab_services_student/Downloads/vcnmb-cldv6212-2024-part-1-Samkelo908-master/CLDV6212/Views/CustomerProfile/AddCustomerProfile.cshtml]
+[C:/Users/lab_services_student/Desktop/prog/Cloud/Prog 2B/CLVD6222/Past Cloud/Cldv/Retail-Shop/CLDV6212/Views/CustomerProfile/AddCustomerProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJQcm9maWxlXEFkZEN1c3RvbWVyUHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/Downloads/vcnmb-cldv6212-2024-part-1-Samkelo908-master/CLDV6212/Views/CustomerProfile/Index.cshtml]
+[C:/Users/lab_services_student/Desktop/prog/Cloud/Prog 2B/CLVD6222/Past Cloud/Cldv/Retail-Shop/CLDV6212/Views/CustomerProfile/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJQcm9maWxlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/Downloads/vcnmb-cldv6212-2024-part-1-Samkelo908-master/CLDV6212/Views/Files/Index.cshtml]
+[C:/Users/lab_services_student/Desktop/prog/Cloud/Prog 2B/CLVD6222/Past Cloud/Cldv/Retail-Shop/CLDV6212/Views/Files/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/Downloads/vcnmb-cldv6212-2024-part-1-Samkelo908-master/CLDV6212/Views/Home/Index.cshtml]
+[C:/Users/lab_services_student/Desktop/prog/Cloud/Prog 2B/CLVD6222/Past Cloud/Cldv/Retail-Shop/CLDV6212/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/Downloads/vcnmb-cldv6212-2024-part-1-Samkelo908-master/CLDV6212/Views/Home/MyWork.cshtml]
+[C:/Users/lab_services_student/Desktop/prog/Cloud/Prog 2B/CLVD6222/Past Cloud/Cldv/Retail-Shop/CLDV6212/Views/Home/MyWork.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNeVdvcmsuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/Downloads/vcnmb-cldv6212-2024-part-1-Samkelo908-master/CLDV6212/Views/Home/Privacy.cshtml]
+[C:/Users/lab_services_student/Desktop/prog/Cloud/Prog 2B/CLVD6222/Past Cloud/Cldv/Retail-Shop/CLDV6212/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/Downloads/vcnmb-cldv6212-2024-part-1-Samkelo908-master/CLDV6212/Views/ProcessingOrders/Index.cshtml]
+[C:/Users/lab_services_student/Desktop/prog/Cloud/Prog 2B/CLVD6222/Past Cloud/Cldv/Retail-Shop/CLDV6212/Views/ProcessingOrders/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvY2Vzc2luZ09yZGVyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/Downloads/vcnmb-cldv6212-2024-part-1-Samkelo908-master/CLDV6212/Views/ProcessingOrders/Register.cshtml]
+[C:/Users/lab_services_student/Desktop/prog/Cloud/Prog 2B/CLVD6222/Past Cloud/Cldv/Retail-Shop/CLDV6212/Views/ProcessingOrders/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvY2Vzc2luZ09yZGVyc1xSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/Downloads/vcnmb-cldv6212-2024-part-1-Samkelo908-master/CLDV6212/Views/ProcessingOrder/Index.cshtml]
+[C:/Users/lab_services_student/Desktop/prog/Cloud/Prog 2B/CLVD6222/Past Cloud/Cldv/Retail-Shop/CLDV6212/Views/ProcessingOrder/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvY2Vzc2luZ09yZGVyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/Downloads/vcnmb-cldv6212-2024-part-1-Samkelo908-master/CLDV6212/Views/ProcessingOrder/Register.cshtml]
+[C:/Users/lab_services_student/Desktop/prog/Cloud/Prog 2B/CLVD6222/Past Cloud/Cldv/Retail-Shop/CLDV6212/Views/ProcessingOrder/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvY2Vzc2luZ09yZGVyXFJlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/Downloads/vcnmb-cldv6212-2024-part-1-Samkelo908-master/CLDV6212/Views/Product/AddProduct.cshtml]
+[C:/Users/lab_services_student/Desktop/prog/Cloud/Prog 2B/CLVD6222/Past Cloud/Cldv/Retail-Shop/CLDV6212/Views/Product/AddProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxBZGRQcm9kdWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/Downloads/vcnmb-cldv6212-2024-part-1-Samkelo908-master/CLDV6212/Views/Product/Index.cshtml]
+[C:/Users/lab_services_student/Desktop/prog/Cloud/Prog 2B/CLVD6222/Past Cloud/Cldv/Retail-Shop/CLDV6212/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/Downloads/vcnmb-cldv6212-2024-part-1-Samkelo908-master/CLDV6212/Views/Shared/Error.cshtml]
+[C:/Users/lab_services_student/Desktop/prog/Cloud/Prog 2B/CLVD6222/Past Cloud/Cldv/Retail-Shop/CLDV6212/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/Downloads/vcnmb-cldv6212-2024-part-1-Samkelo908-master/CLDV6212/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/lab_services_student/Desktop/prog/Cloud/Prog 2B/CLVD6222/Past Cloud/Cldv/Retail-Shop/CLDV6212/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/Downloads/vcnmb-cldv6212-2024-part-1-Samkelo908-master/CLDV6212/Views/UploadDocuments/Index.cshtml]
+[C:/Users/lab_services_student/Desktop/prog/Cloud/Prog 2B/CLVD6222/Past Cloud/Cldv/Retail-Shop/CLDV6212/Views/UploadDocuments/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXBsb2FkRG9jdW1lbnRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/Downloads/vcnmb-cldv6212-2024-part-1-Samkelo908-master/CLDV6212/Views/User/AddUser.cshtml]
+[C:/Users/lab_services_student/Desktop/prog/Cloud/Prog 2B/CLVD6222/Past Cloud/Cldv/Retail-Shop/CLDV6212/Views/User/AddUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBZGRVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/Downloads/vcnmb-cldv6212-2024-part-1-Samkelo908-master/CLDV6212/Views/User/Index.cshtml]
+[C:/Users/lab_services_student/Desktop/prog/Cloud/Prog 2B/CLVD6222/Past Cloud/Cldv/Retail-Shop/CLDV6212/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/Downloads/vcnmb-cldv6212-2024-part-1-Samkelo908-master/CLDV6212/Views/User/Login.cshtml]
+[C:/Users/lab_services_student/Desktop/prog/Cloud/Prog 2B/CLVD6222/Past Cloud/Cldv/Retail-Shop/CLDV6212/Views/User/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/Downloads/vcnmb-cldv6212-2024-part-1-Samkelo908-master/CLDV6212/Views/User/SignUp.cshtml]
+[C:/Users/lab_services_student/Desktop/prog/Cloud/Prog 2B/CLVD6222/Past Cloud/Cldv/Retail-Shop/CLDV6212/Views/User/SignUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTaWduVXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/Downloads/vcnmb-cldv6212-2024-part-1-Samkelo908-master/CLDV6212/Views/_ViewImports.cshtml]
+[C:/Users/lab_services_student/Desktop/prog/Cloud/Prog 2B/CLVD6222/Past Cloud/Cldv/Retail-Shop/CLDV6212/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/Downloads/vcnmb-cldv6212-2024-part-1-Samkelo908-master/CLDV6212/Views/_ViewStart.cshtml]
+[C:/Users/lab_services_student/Desktop/prog/Cloud/Prog 2B/CLVD6222/Past Cloud/Cldv/Retail-Shop/CLDV6212/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/Downloads/vcnmb-cldv6212-2024-part-1-Samkelo908-master/CLDV6212/Views/Shared/_Layout.cshtml]
+[C:/Users/lab_services_student/Desktop/prog/Cloud/Prog 2B/CLVD6222/Past Cloud/Cldv/Retail-Shop/CLDV6212/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-r0hfzaxla7

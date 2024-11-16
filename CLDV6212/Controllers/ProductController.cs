@@ -18,9 +18,9 @@ namespace CLDV6212.Controllers
         // Logger to log information and errors
         private readonly ILogger<ProductController> _logger;
         
-        private readonly string _functionUrl = "https://abcretailerfunction.azurewebsites.net/api/AddProduct?code=6yJRxDO2RKyEPN3AFALk6_UKhjnlCUTQ788qQLyPUlZ7AzFuMkT8cg%3D%3D";
+        private readonly string _functionUrl = "";
         // Connection string for SQL database
-        string connectionString = "Data Source=abcretailpart3.database.windows.net;Initial Catalog=abcRetailer; User ID=ST10141464; Password=SamRock28";
+        string connectionString = "";
 
         // Constructor initializes HttpClient and logger
         public ProductController(HttpClient httpClient, ILogger<ProductController> logger)
@@ -140,8 +140,8 @@ namespace CLDV6212.Controllers
                 }
 
                 // Define Blob Storage connection details
-                var blobConnectionString = "DefaultEndpointsProtocol=https;AccountName=abcretailclvd;AccountKey=YMXj4YnPxNcKH7ddYBXMiEZXiybKEMbldwLLHhJMd83EUr44qtzDldYMPU56cn7B1w4pi7TsdZNT+AStHdLkNA==;EndpointSuffix=core.windows.net";
-                var blobContainerName = "images1";
+                var blobConnectionString = "";
+                var blobContainerName = "";
 
                 // Delete the image file from Blob Storage
                 var blobClient = new BlobContainerClient(blobConnectionString, blobContainerName);
@@ -163,8 +163,8 @@ namespace CLDV6212.Controllers
         private async Task<string> UploadImageToBlobAsync(IFormFile file)
         {
             // Define Blob Storage connection string and container name
-            var connectionString = "DefaultEndpointsProtocol=https;AccountName=abcretailclvd;AccountKey=YMXj4YnPxNcKH7ddYBXMiEZXiybKEMbldwLLHhJMd83EUr44qtzDldYMPU56cn7B1w4pi7TsdZNT+AStHdLkNA==;EndpointSuffix=core.windows.net";
-            var blobContainerName = "images1";
+            var connectionString = "";
+            var blobContainerName = "";
             var blobClient = new BlobContainerClient(connectionString, blobContainerName);
 
             // Create the container if it doesn't exist
